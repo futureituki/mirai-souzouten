@@ -1,0 +1,12 @@
+body{
+    /* background-color: rgb(157, 111, 50); */
+    background-color: #9b7438;
+    /* background-image: url(../images/top-img.png); */
+ position: absolute;
+ top: 50%;
+ left: 52%;
+ transform: translate(-50%,-50%);
+}
+.lodo-img {
+    width: 800px;
+}
