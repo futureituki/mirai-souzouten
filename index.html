@@ -5,10 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/font.css" />
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="./style/modal.css" />
     <title>Document</title>
   </head>
   <body>
-    <img src="images/sunaba.png" alt="" />
-    <img src="images/top-img.png" alt="top-img" />
+    <!-- モーダルを開くボタン -->
+    <button class="modal-open js-modal-open">モーダルを開く</button>
+
+    <!-- モーダル本体 -->
+    <div class="modal js-modal">
+      <div class="modal-container">
+        <!-- モーダルを閉じるボタン -->
+        <div class="modal-close js-modal-close">×</div>
+        <!-- モーダル内部のコンテンツ -->
+        <div class="modal-content">
+          <img class="modal-logo" src="images/sunaba.png" alt="" />
+          <p class="modal-text">
+            粒子を持ったデータ『particle-vision』（パーティカル・ヴィジョン）<br />
+            の技術を使い、プロジェクターのように投影することで、<br />
+            空間全体が粒子を持ったデータに囲まれた、実際に触れることが出来る。<br />
+            今回は砂場を再現し、子供から大人までが本気で砂遊びができる『すなばーちゃる』を制作。
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="modal.js"></script>
   </body>
 </html>
