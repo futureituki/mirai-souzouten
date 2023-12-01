@@ -4,8 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contents</title>
+    <link rel="stylesheet" href="./style/content.css" />
   </head>
+
   <body>
-    <main class="main"></main>
+    <main>
+      <!-- SLIDER -->
+      <section class="description">
+        <div class="container">
+          <h2>途中から横スクロール</h2>
+          <p>横スクロール中はパララックス</p>
+        </div>
+      </section>
+      <div class="vertical-slider__wrap">
+        <div class="proxy"></div>
+        <section class="vertical-area teal">
+          <div class="img-wrap">
+            <div class="mask"></div>
+            <img
+              src="https://ryo-sukeblog.net/wp-content/uploads/2022/04/sea.jpg"
+              alt=""
+              class="js-img"
+            />
+            <div class="heading-wrap"><h2>Beautiful World</h2></div>
+          </div>
+        </section>
+        <section class="vertical-area maroon">
+          <div class="img-wrap">
+            <div class="mask"></div>
+            <img
+              src="https://ryo-sukeblog.net/wp-content/uploads/2022/04/cherry-blossoms.jpg"
+              alt=""
+              class="js-img img2"
+            />
+            <div class="heading-wrap"><h2>Sakura Nagashi</h2></div>
+          </div>
+        </section>
+        <section class="vertical-area olive">
+          <div class="img-wrap">
+            <div class="mask"></div>
+            <img
+              src="https://ryo-sukeblog.net/wp-content/uploads/2022/04/scene.jpg"
+              alt=""
+              class="js-img img3"
+            />
+            <div class="heading-wrap"><h2>One Last Kiss</h2></div>
+          </div>
+        </section>
+      </div>
+      <section class="last-area">
+        <h2>横スクロール終了</h2>
+      </section>
+      <!-- END SLIDER -->
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
+    <script src="content.js"></script>
   </body>
 </html>
