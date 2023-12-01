@@ -1,4 +1,3 @@
-
 let sections = document.querySelectorAll(".vertical-area");
 let scrollContainer = document.querySelector(".vertical-slider__wrap");
 let images = gsap.utils.toArray(".js-img");
@@ -24,7 +23,7 @@ function txtSplit(el){//https://sinciate.co.jp/media/2999/
     var newHtml = "";
 
     text.split("").forEach(function(v) {
-        newHtml += "" + v + "";
+        newHtml += "<span>" + v + "</span>";
     });
     el.innerHTML = newHtml;
 }
