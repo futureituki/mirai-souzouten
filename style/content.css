@@ -15,22 +15,38 @@ main{
 }
 .description{
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #222;
+    background-image: url(../images/sunabackground.png);
+    background-position: center;
 }
 .container{
     width: fit-content;
     color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.container img{
+width: 1000px;
+filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, 0.2));
 }
 .container h2{
     font-size: 40px;
+    text-align: center;
 }
 .container p{
-    width: 100%;
+    font-size: 20px;
+    width: 80%;
+    margin: 50px auto 0 auto;
     text-align: center;
+    line-height: 2.0;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.5);
 }
 .vertical-slider__wrap{
     width: fit-content;
@@ -112,7 +128,8 @@ main{
     background-color:teal;
 }
 .maroon{
-    background-color: maroon;
+    /* background-color: maroon; */
+    background-image: url(../images/sunabackground.png);
 }
 .olive{
     background-color: olive;
@@ -146,4 +163,12 @@ margin: 20px auto;
 font-size: 38px;
 color: #fff;
 font-weight: bold;
+}
+
+iframe {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    
+    margin-left: 420px;
 }
