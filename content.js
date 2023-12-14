@@ -2,7 +2,8 @@ let sections = document.querySelectorAll(".vertical-area");
 let scrollContainer = document.querySelector(".vertical-slider__wrap");
 let images = gsap.utils.toArray(".js-img");
 let heading = gsap.utils.toArray(".heading-wrap h2");
-
+import * as THREE from './module/build/three.module.js';
+console.log(THREE)
 let scrollTween = gsap.to(sections, {
     xPercent: -100 * (sections.length - 1),
     ease: "none"
@@ -88,3 +89,5 @@ var drag = Draggable.create(".proxy", {
     horizontalScroll.scroll(this.startScroll - (this.x - this.startX) * dragRatio);
   }
 })[0];
+
+
