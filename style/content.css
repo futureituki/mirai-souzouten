@@ -64,19 +64,17 @@ filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, 0.2));
 }
 .heading-wrap{
     width: 100%;
-    overflow: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-}
+}   
 .vertical-area h2{
     color: white;
     font-size: 56px;
@@ -108,13 +106,14 @@ filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, 0.2));
 .js-img > div {
     min-width: 400px;
     min-height: 400px;
-    width: 80%;
     height: 100%;
+    width: 80%;
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
     top: 10%;
     right: -15%;
+    pointer-events: auto;
 }
 .sec01 {
     background-image: url(../images/Group31.png);
@@ -168,11 +167,14 @@ filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, 0.2));
     visibility: hidden;
 }
 .sec01-text {
+    position: absolute;
+    bottom:30%;
+    left: 5%;
     /* width: px; */
 margin: 0 auto;
 /* padding-top: 30px; */
 font-size: 18px;
-color: #fff;
+color: #000;
 line-height: 2.2;
   }
 .sec01-title {
@@ -182,13 +184,6 @@ color: #fff;
 font-weight: bold;
 }
 
-iframe {
-    width: 600px;
-    height: 300px;
-    position: absolute;
-    
-    margin-left: 420px;
-}
 .footer-container{
     width: 100%;
     height: 100vh;
@@ -199,6 +194,20 @@ iframe {
 #streaming-img{
     position: relative;
     background-image: url('../images/eveningsuna.webp');
+}
+.sec_titleimg {
+    position: absolute;
+    top:-5%;
+    left: 0%;
+    width: 80%;
+    height: 100%;
+}
+.sec_video {
+    position: absolute;
+    top:20%;
+    left: 15%;
+}
+=======
     background-repeat: repeat-x;
     background-size: cover;
     width: 100%;

@@ -79,15 +79,39 @@ heading.forEach((h, i) => {
 
 // total scroll amount divided by the total distance that the sections move gives us the ratio we can apply to the pointer movement so that it fits. 
 var dragRatio = scrollContainer.offsetWidth / (window.innerWidth * (sections.length - 1));
-var drag = Draggable.create(".proxy", {
-  trigger: scrollContainer,
-  type: "x",
-  onPress() {
-    this.startScroll = horizontalScroll.scroll();
-  },
-  onDrag() {
-    horizontalScroll.scroll(this.startScroll - (this.x - this.startX) * dragRatio);
-  }
-})[0];
+// var drag = Draggable.create(".proxy", {
+//   trigger: scrollContainer,
+//   type: "x",
+//   onPress() {
+//     this.startScroll = horizontalScroll.scroll();
+//   },
+//   onDrag() {
+//     horizontalScroll.scroll(this.startScroll - (this.x - this.startX) * dragRatio);
+//   }
+// })[0];
 
+const iframevideo = document.querySelector('.iframevideo');
+function ElementRequestFullscreen(element){
+    var list = [
+      "requestFullscreen",
+      "webkitRequestFullScreen",//chrome, safariに反応する
+      "mozRequestFullScreen",//firefoxに反応する
+      "msRequestFullscreen"
+    ];
+    var i;
+    var num = list.length;
+    for(i=0;i < num;i++){
+      if(element[list[i]]){
+        element[list[i]]();
+        return true;
+      }
+    }
+    return false;
+  }
+iframevideo.contentWindow.addEventListener('click',()=>{
+    horizontalScroll.disable();
+    console.log(horizontalScroll)
+})
+=======
+})[0];
 
