@@ -112,6 +112,4 @@ iframevideo.contentWindow.addEventListener('click',()=>{
     horizontalScroll.disable();
     console.log(horizontalScroll)
 })
-=======
-})[0];
 
