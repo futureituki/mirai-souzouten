@@ -151,17 +151,66 @@ filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, 0.2));
     background-color: #A5DD91;
 }
 .last-area{
-    background-color: #222;
+   background-image: url(../images/background-other.png);
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: 100%;
 }
-.last-area h2{
-    color: white;
-    font-size: 40px;
+.last-title {
+    width: 100%;
 }
+
+.last-title img {
+    width: 360px;
+  position: left;
+  margin-left: 120px;
+}
+
+.last-contents {
+   width: 100%;
+   height: 100vh;
+   position: right;
+}
+
+.other-1 {
+    position: relative;
+    margin-top: 120px;
+}
+
+.other-1 h3 {
+    font-size: 30px;
+    color: #ffe500;
+    position: top;
+}
+
+.other-1 p {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 36px;
+    line-height: 1.65;
+}
+
+.other-2 {
+    position: relative;
+    margin-top: 160px;
+}
+
+.other-2 h3 {
+    font-size: 30px;
+    color: #ffe500;
+    position: top;
+}
+
+.other-2 p {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 36px;
+    line-height: 1.65;
+}
+
 .proxy{
     position: absolute;
     visibility: hidden;
