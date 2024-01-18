@@ -206,31 +206,78 @@ filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, 0.2));
 .olive{
     background-color: #ffe500;
 }
-.last-area{
-   background-image: url(../images/background-other.png);
+.last_area{
+   background-image: url(../images/Group118.png);
     width: 100%;
-    height: 100vh;
+    height: 190dvh;
+    max-height: 1800px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #1E1E1E;
     background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: -100px;
+    position: relative;
 }
 .last-title {
     width: 100%;
 }
-
-.last-title img {
-    width: 360px;
-  position: left;
-  margin-left: 120px;
+.kyouryuu{
+    position: absolute;
+    left: -1%;
+    top: 17%;
+    width: 300px;
+}
+.last_area_title {
+    width: 500px;
+  position: absolute;
+  top: 25%;
+  left: 10%;
 }
 
 .last-contents {
-   width: 100%;
-   height: 100vh;
-   position: right;
+   position: absolute;
+   top:5%;
+   left: 52%;
 }
-
+.medal1 {
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    z-index: 0;
+}
+.medal2 {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    z-index: 0;
+}
+.medal3 {
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    z-index: 0;
+}
+.qr_section {
+    z-index: 0;
+}
+.qr_section_title {
+    position: absolute;
+    left: 2%;
+    top:50%;
+}
+.qr_section_title img {
+    width: 800px;
+}
+.qr_img {
+    width: 1200px;
+    border-radius:2.5em;
+    position: absolute;
+    left: 30%;
+    top:32%;
+    z-index: -1;
+}
 .other-1 {
     position: relative;
     margin-top: 120px;
@@ -365,3 +412,11 @@ font-weight: bold;
     color: #fff;
     text-shadow: 0px 4px 2px rgba(0,0,0,0.3);
   }
+footer {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+.footer_img img {
+    width: 100%;
+}
