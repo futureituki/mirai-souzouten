@@ -324,7 +324,7 @@ filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, 0.2));
 margin: 0 auto;
 font-size: 24px;
 color: #000;
-line-height: 2.2;
+line-height: 2;
 }
 .sec01-text {
     bottom:25%;
@@ -355,6 +355,15 @@ line-height: 2.2;
   }
 .sec03-text span:nth-child(1) {
     margin:0 0 10px 0;
+  }
+.sec04-text {
+    bottom:20%;
+  }
+.sec04-text span {
+    display: block;
+}
+.sec04-text span:nth-child(3) {
+    margin:0 0 15px 0;
   }
 
 .sec01-title {
